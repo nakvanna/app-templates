@@ -2,7 +2,7 @@
 
 App template pre-design for start-up app with dynamic themes, Translation, Register UI(Phone number, Google, and Apple).
 
-##Note
+## Note
  - [Sound null safety in Dart](https://dart.dev/null-safety)
  - [Null safety in Flutter](https://flutter.dev/docs/null-safety)
 
