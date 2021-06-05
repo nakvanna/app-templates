@@ -1,6 +1,6 @@
 # app_templates
 
-A new Flutter project.
+App template pre-design for start-up app with dynamic themes and Translation
 
 ## Getting Started
 
