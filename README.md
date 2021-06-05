@@ -1,4 +1,4 @@
-# app_templates
+# App Templates
 
 App template pre-design for start-up app with dynamic themes, Translation, Register UI(Phone number, Google, and Apple).
 
