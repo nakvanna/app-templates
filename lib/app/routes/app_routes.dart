@@ -12,6 +12,7 @@ abstract class Routes {
   static const ABOUT_US = _Paths.ABOUT_US;
   static const AUTH = _Paths.AUTH;
   static const HELP = _Paths.HELP;
+  static const OTP = _Paths.OTP;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const ABOUT_US = '/about-us';
   static const AUTH = '/auth';
   static const HELP = '/help';
+  static const OTP = '/otp';
 }

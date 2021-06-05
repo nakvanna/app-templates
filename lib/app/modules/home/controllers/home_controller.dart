@@ -23,7 +23,14 @@ class HomeController extends GetxController {
         },
         'image': 'assets/images/icon-png/information.png',
         'title': 'drawers.about-us',
-      }
+      },
+      {
+        'onTap': () {
+          Get.offAllNamed(Routes.AUTH);
+        },
+        'image': 'assets/images/icon-png/logout.png',
+        'title': 'Logout',
+      },
     ];
   }
 

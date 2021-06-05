@@ -2,11 +2,12 @@ import 'package:app_templates/app/config/size_config.dart';
 import 'package:app_templates/app/helper/input_fields/intl_phone/phone_number_input_field.dart';
 import 'package:app_templates/app/helper/widgets/rounded_button.dart';
 import 'package:app_templates/app/routes/app_pages.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+
 import '../controllers/auth_controller.dart';
-import 'package:community_material_icon/community_material_icon.dart';
 
 class AuthView extends GetView<AuthController> {
   @override
@@ -29,9 +30,19 @@ class AuthView extends GetView<AuthController> {
                     constraints: BoxConstraints(maxHeight: double.infinity),
                   ),
                 ),
-                Image.asset(
-                  'assets/images/png/building.png',
-                  fit: BoxFit.fill,
+                Hero(
+                  tag: 'verification',
+                  child: Image.asset(
+                    'assets/images/png/verification.png',
+                    height: 0,
+                  ),
+                ),
+                Hero(
+                  tag: 'building-bottom',
+                  child: Image.asset(
+                    'assets/images/png/building.png',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ],
             ),
@@ -85,7 +96,7 @@ class AuthView extends GetView<AuthController> {
                   ),
                   RoundedButtonIcon(
                     onTap: () {
-                      print('Hello');
+                      Get.toNamed(Routes.OTP);
                     },
                     height: defaultSize * 4.5,
                     width: screenWidth - (2 * defaultSize),
@@ -111,7 +122,7 @@ class AuthView extends GetView<AuthController> {
                         backgroundColor: Colors.red[400],
                         label: 'Google',
                         onTap: () {
-                          print('Hello world');
+                          Get.offAllNamed(Routes.HOME);
                         },
                         icon: Icon(CommunityMaterialIcons.google),
                       ),
@@ -125,7 +136,7 @@ class AuthView extends GetView<AuthController> {
                         backgroundColor:
                             Get.isDarkMode ? Colors.white70 : Colors.black54,
                         onTap: () {
-                          print('Hello world');
+                          Get.offAllNamed(Routes.HOME);
                         },
                         icon: Icon(CommunityMaterialIcons.food_apple),
                       ),

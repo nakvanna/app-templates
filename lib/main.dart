@@ -2,7 +2,6 @@ import 'package:app_templates/app/data/persistent/persistent_data.dart';
 import 'package:app_templates/app/modules/languages/controllers/languages_controller.dart';
 import 'package:app_templates/app/translator/translator.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 

@@ -19,6 +19,6 @@ class PersistentData extends GetxController {
   }
 
   String readLocaleCode() {
-    return box.read(localeCodeKey) ?? 'kh_KH';
+    return box.read(localeCodeKey) ?? 'km_KH';
   }
 }
