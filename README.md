@@ -1,6 +1,9 @@
 # app_templates
 
-App template pre-design for start-up app with dynamic themes and Translation
+App template pre-design for start-up app with dynamic themes and Translation.
+
+## Package using
+> - Getx CLI
 
 ## Getting Started
 
